@@ -694,7 +694,7 @@
                 }
 
                 // Display disclaimer
-                document.getElementById('disclaimer').innerHTML = exchangeRatesData.description;
+                document.getElementById('disclaimer').innerHTML = exchangeRatesData.description.replaceAll('O/D BUYING - Encashment of drafts TCS and other instruments<br><br>', '');
 
                 // Fetch mid-market rates
                 fetchMidMarketRates();
